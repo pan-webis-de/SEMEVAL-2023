@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-princess-knight/transformer-baseline-task1:0.0.3-tira-docker-software-id-tattered-hill
+TIRA_VM_ID=princess-knight
+TIRA_COMMAND_TO_EXECUTE=/transformer-baseline-task-1.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-32
+TIRA_DATASET_ID=task-1-type-classification-validation-20220924-training
+TIRA_RUN_ID=2022-11-04-07-38-27
+TIRA_CPU_COUNT=2
+TIRA_MEMORY_IN_GIBIBYTE=20
+TIRA_GPU=0
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=6aba3314-9966-408e-b2d6-818855cd8a7c
+TIRA_GIT_ID=eval---task-1-type-classification-validation-20220924-training---princess-knight---2022-11-04-07-38-27---started-2022-11-04-07-38-27
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-validation-20220924-training-evaluator
