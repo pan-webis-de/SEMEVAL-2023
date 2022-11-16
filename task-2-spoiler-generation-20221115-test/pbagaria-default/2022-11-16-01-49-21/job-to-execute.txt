@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-pbagaria-default/trial:0.0.1-tira-docker-software-id-merry-hangar
+TIRA_VM_ID=pbagaria-default
+TIRA_COMMAND_TO_EXECUTE=/transformer-baseline-task-2.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-62
+TIRA_DATASET_ID=task-2-spoiler-generation-20221115-test
+TIRA_RUN_ID=2022-11-16-01-49-21
+TIRA_CPU_COUNT=4
+TIRA_MEMORY_IN_GIBIBYTE=40
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=e1dab037-85b0-483b-8adc-26c432c94949
+TIRA_GIT_ID=eval---task-2-spoiler-generation-20221115-test---pbagaria-default---2022-11-16-01-49-21---started-2022-11-16-01-49-21
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-20221115-test-evaluator
