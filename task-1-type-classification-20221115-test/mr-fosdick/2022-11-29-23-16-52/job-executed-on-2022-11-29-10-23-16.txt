@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-mr-fosdick/task1-randomforest:0.3.0-tira-docker-software-id-wise-inertia
+TIRA_VM_ID=mr-fosdick
+TIRA_COMMAND_TO_EXECUTE=/app/RandomForest.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-135
+TIRA_DATASET_ID=task-1-type-classification-20221115-test
+TIRA_RUN_ID=2022-11-29-23-16-52
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=0e719ece-a7d7-417f-a674-a0ca27c7c4fe
+TIRA_GIT_ID=eval---task-1-type-classification-20221115-test---mr-fosdick---2022-11-29-23-16-52---started-2022-11-29-23-16-52
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-20221115-test-evaluator
