@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=ubuntu:18.04
+TIRA_VM_ID=spider-jerusalem
+TIRA_COMMAND_TO_EXECUTE=echo 'No software to execute. Only evaluation'
+TIRA_SOFTWARE_ID=-1
+TIRA_DATASET_ID=task-1-type-classification-20221115-test
+TIRA_RUN_ID=2022-11-30-18-59-06
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=cffc67c3-1e22-4fd5-8f4b-8cc644a7bc3d
+TIRA_GIT_ID=eval---task-1-type-classification-20221115-test---spider-jerusalem---2022-11-30-18-59-06---started-2022-11-30-22-49-29
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-20221115-test-evaluator
