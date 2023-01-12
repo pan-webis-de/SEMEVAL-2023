@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-pan23-perry-white/debert-test:0.0.7-tira-docker-software-id-resultant-texture
+TIRA_VM_ID=pan23-perry-white
+TIRA_COMMAND_TO_EXECUTE=/naive-baseline-task-1.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-322
+TIRA_DATASET_ID=task-1-type-classification-20221115-test
+TIRA_RUN_ID=2023-01-12-23-24-17
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=1-nvidia-1080
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=50cfb3b3-dd3b-4325-a3dd-e27f89f93edf
+TIRA_GIT_ID=eval---task-1-type-classification-20221115-test---pan23-perry-white---2023-01-12-23-24-17---started-2023-01-12-23-24-17
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-20221115-test-evaluator
