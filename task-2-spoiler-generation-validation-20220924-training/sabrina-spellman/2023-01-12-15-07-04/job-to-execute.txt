@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-sabrina-spellman/clickbait-spoiling:1.0.2-tira-docker-software-id-sleek-north
+TIRA_VM_ID=sabrina-spellman
+TIRA_COMMAND_TO_EXECUTE=exec python /src/clickbait_spoiling/clickbait_spoiler.py --input=$inputDataset/input.jsonl --output=$outputDir/run.jsonl --base_path=''
+TIRA_SOFTWARE_ID=docker-software-314
+TIRA_DATASET_ID=task-2-spoiler-generation-validation-20220924-training
+TIRA_RUN_ID=2023-01-12-15-07-04
+TIRA_CPU_COUNT=2
+TIRA_MEMORY_IN_GIBIBYTE=20
+TIRA_GPU=0
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=8ed8876c-c4fb-406c-993c-3cb787468959
+TIRA_GIT_ID=eval---task-2-spoiler-generation-validation-20220924-training---sabrina-spellman---2023-01-12-15-07-04---started-2023-01-12-15-07-04
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-validation-20220924-training-evaluator
