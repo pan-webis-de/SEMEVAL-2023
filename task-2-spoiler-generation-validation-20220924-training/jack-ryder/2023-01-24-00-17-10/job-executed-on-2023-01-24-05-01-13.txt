@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-jack-ryder/spirex:0.0.2-tira-docker-software-id-direct-taste
+TIRA_VM_ID=jack-ryder
+TIRA_COMMAND_TO_EXECUTE=/spirex/new_hybrid_deberta.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-433
+TIRA_DATASET_ID=task-2-spoiler-generation-validation-20220924-training
+TIRA_RUN_ID=2023-01-24-00-17-10
+TIRA_CPU_COUNT=4
+TIRA_MEMORY_IN_GIBIBYTE=40
+TIRA_GPU=0
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=e1a2d64f-cb00-4274-ae67-159eb83ce4a1
+TIRA_GIT_ID=eval---task-2-spoiler-generation-validation-20220924-training---jack-ryder---2023-01-24-00-17-10---started-2023-01-24-00-17-10
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-validation-20220924-training-evaluator
