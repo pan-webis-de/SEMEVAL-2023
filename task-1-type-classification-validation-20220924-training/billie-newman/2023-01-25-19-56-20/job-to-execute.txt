@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-billie-newman/task1_anlp:0.5.ner-tira-docker-software-id-mild-displacement
+TIRA_VM_ID=billie-newman
+TIRA_COMMAND_TO_EXECUTE=/run_task_1.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl --apply_ner yes
+TIRA_SOFTWARE_ID=docker-software-509
+TIRA_DATASET_ID=task-1-type-classification-validation-20220924-training
+TIRA_RUN_ID=2023-01-25-19-56-20
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=1-nvidia-1080
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=2ae8ddf2-1ef0-4b91-9706-07bc4d101909
+TIRA_GIT_ID=eval---task-1-type-classification-validation-20220924-training---billie-newman---2023-01-25-19-56-20---started-2023-01-25-19-56-20
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-validation-20220924-training-evaluator
