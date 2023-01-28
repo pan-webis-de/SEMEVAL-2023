@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-nancy-hicks-gribble/task-2:0.0.10-tira-docker-software-id-narrow-legend
+TIRA_VM_ID=nancy-hicks-gribble
+TIRA_COMMAND_TO_EXECUTE=/app.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-587
+TIRA_DATASET_ID=task-2-spoiler-generation-20221115-test
+TIRA_RUN_ID=2023-01-28-17-53-10
+TIRA_CPU_COUNT=4
+TIRA_MEMORY_IN_GIBIBYTE=40
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=cf30e5f4-b0f7-40ca-896a-7d40c3fc85d3
+TIRA_GIT_ID=eval---task-2-spoiler-generation-20221115-test---nancy-hicks-gribble---2023-01-28-17-53-10---started-2023-01-28-17-53-10
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-20221115-test-evaluator
