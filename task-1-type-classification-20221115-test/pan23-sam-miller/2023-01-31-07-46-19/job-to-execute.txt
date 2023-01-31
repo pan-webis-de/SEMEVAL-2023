@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-pan23-sam-miller/task1:22-tira-docker-software-id-senior-quetzal
+TIRA_VM_ID=pan23-sam-miller
+TIRA_COMMAND_TO_EXECUTE=/xlnettest.py --input $inputDataset/input.jsonl --output $outputDir/run.jsonl
+TIRA_SOFTWARE_ID=docker-software-610
+TIRA_DATASET_ID=task-1-type-classification-20221115-test
+TIRA_RUN_ID=2023-01-31-07-46-19
+TIRA_CPU_COUNT=4
+TIRA_MEMORY_IN_GIBIBYTE=40
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=778bcc59-52e1-49a2-95c5-8ef18e88e20e
+TIRA_GIT_ID=eval---task-1-type-classification-20221115-test---pan23-sam-miller---2023-01-31-07-46-19---started-2023-01-31-07-46-19
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-20221115-test-evaluator
