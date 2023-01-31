@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=ubuntu:18.04
+TIRA_VM_ID=pan23-walter-burns
+TIRA_COMMAND_TO_EXECUTE=echo 'No software to execute. Only evaluation'
+TIRA_SOFTWARE_ID=-1
+TIRA_DATASET_ID=task-2-spoiler-generation-20221115-test
+TIRA_RUN_ID=2023-01-31-16-08-37
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=0
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=d1f9cd0a-7be0-4846-92c7-1f5a8b44d11e
+TIRA_GIT_ID=eval---task-2-spoiler-generation-20221115-test---pan23-walter-burns---2023-01-31-16-08-37---started-2023-01-31-16-08-38
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-20221115-test-evaluator
