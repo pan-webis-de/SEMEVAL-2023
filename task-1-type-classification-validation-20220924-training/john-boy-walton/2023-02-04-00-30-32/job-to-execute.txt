@@ -1,0 +1,16 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-john-boy-walton/websemble:0.11.amd-tira-docker-software-id-intricate-ocean
+TIRA_VM_ID=john-boy-walton
+TIRA_COMMAND_TO_EXECUTE= /WebSemble/run.py $inputDataset $outputDir
+TIRA_SOFTWARE_ID=docker-software-697
+TIRA_DATASET_ID=task-1-type-classification-validation-20220924-training
+TIRA_RUN_ID=2023-02-04-00-30-32
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=1-nvidia-1080
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=883ce7d5-3624-413f-a451-e3284258348e
+TIRA_GIT_ID=eval---task-1-type-classification-validation-20220924-training---john-boy-walton---2023-02-04-00-30-32---started-2023-02-04-00-30-32
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-validation-20220924-training-evaluator
