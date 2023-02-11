@@ -1,0 +1,17 @@
+TIRA_IMAGE_TO_EXECUTE=ubuntu:18.04
+TIRA_VM_ID=jack-flood
+TIRA_COMMAND_TO_EXECUTE=echo 'No software to execute. Only evaluation'
+TIRA_SOFTWARE_ID=-1
+TIRA_DATASET_ID=task-1-type-classification-validation-20220924-training
+TIRA_RUN_ID=2023-02-11-07-10-15
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=0
+TIRA_DATA=no
+TIRA_DATASET_TYPE=training
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=66a4980c-222a-4900-987c-616a3fee10cb
+TIRA_GIT_ID=eval---task-1-type-classification-validation-20220924-training---jack-flood---2023-02-11-07-10-15---started-2023-02-11-07-10-16
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 1 --ground_truth_classes $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-1-type-classification-validation-20220924-training-evaluator
