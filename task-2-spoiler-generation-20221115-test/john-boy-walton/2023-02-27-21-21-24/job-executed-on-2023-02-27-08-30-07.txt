@@ -1,0 +1,17 @@
+TIRA_IMAGE_TO_EXECUTE=registry.webis.de/code-research/tira/tira-user-john-boy-walton/websemble:0.25.amd-tira-docker-software-id-another-lepton
+TIRA_VM_ID=john-boy-walton
+TIRA_COMMAND_TO_EXECUTE=/WebSemble/run.py $inputDataset $outputDir 2
+TIRA_SOFTWARE_ID=docker-software-880
+TIRA_DATASET_ID=task-2-spoiler-generation-20221115-test
+TIRA_RUN_ID=2023-02-27-21-21-24
+TIRA_CPU_COUNT=1
+TIRA_MEMORY_IN_GIBIBYTE=10
+TIRA_GPU=1-nvidia-1080
+TIRA_DATA=no
+TIRA_DATASET_TYPE=test
+TIRA_TASK_ID=clickbait-spoiling
+TIRA_EVALUATOR_TRANSACTION_ID=c6b4b930-305a-4cb8-8da7-49adf87df1a7
+TIRA_GIT_ID=eval---task-2-spoiler-generation-20221115-test---john-boy-walton---2023-02-27-21-21-24---started-2023-02-27-21-21-24
+TIRA_EVALUATION_IMAGE_TO_EXECUTE=webis/pan-clickbait-spoiling-evaluator:0.0.10
+TIRA_EVALUATION_COMMAND_TO_EXECUTE=bash -c '/clickbait-spoiling-eval.py --task 2 --ground_truth_spoiler $inputDataset --input_run $inputRun --output_prototext ${outputDir}/evaluation.prototext'
+TIRA_EVALUATION_SOFTWARE_ID=task-2-spoiler-generation-20221115-test-evaluator
